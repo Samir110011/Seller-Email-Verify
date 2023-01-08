@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="test.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<style>
+    :root {
+        --background: #1e1e2f;
+        --dark-box-background: #27293d;
+        --white-text: rgba(255, 255, 255, 0.8);
+        --pink: #e14eca;
+        --mixed-pink: linear-gradient(#e14eca, #ba54f5);
+        --purple: #640164;
+        --dark-text: rgb(154, 154, 154);
+        --lite-dark: #bac7d3;
+        --sky-blue: #03e9f4;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    body {
+        max-width: 1500px;
+        margin: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .whole-content {
+        max-width: 1500px;
+        background-color: var(--lite-dark);
+    }
+
+    .content-holder {
+        min-height: 100vh;
+    }
+
+    .navbar {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background);
+    }
+
+    .navbar img {
+        height: 60px;
+        width: auto;
+    }
+
+    .box-1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .col-1 {
+        background-color: whitesmoke;
+        margin: 50px 20px;
+        border-radius: 5px;
+        max-width: 600px;
+        padding: 80px;
+    }
+
+    .col-1 h1 {
+        text-align: center;
+        font-family: sans-serif;
+        color: var(--background);
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .col-1 p {
+        font-size: 20px;
+        color: var(--background);
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+    }
+
+    .button a {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 700;
+        background-color: #1e1e2f;
+        padding: 12px 20px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .button a:hover {
+        background-color: var(--sky-blue);
+        color: var(--background);
+    }
+
+    .box-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .col-2 {
+        background-color: var(--background);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        width: 90%;
+    }
+
+    .col-2 h1 {
+        color: var(--white-text);
+        text-align: center;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .image img {
+        height: 100%;
+        max-height: 150px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        background-color: #27293d;
+    }
+
+    .copy-right {
+        background-color: var(--background);
+        padding: 20px 0px;
+    }
+
+    .box {
+        background-color: var(--dark-box-background);
+        padding: 40px;
+    }
+
+    .box h1 {
+        text-align: center;
+        color: var(--white-text);
+    }
+
+    .box p {
+        color: var(--white-text);
+        text-align: center;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social a {
+        margin: 0px 10px;
+    }
+
+    .social a img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .copy-right p {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* responsive less then 1100 px device  */
+    @media only screen and (max-width: 1100px) {
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .col-1 {
+            max-width: 500px;
+            padding: 40px;
+        }
+
+        .box-2{
+            width: 100%;
+            display: block;
+            padding: 0px 20px;
+        }
+
+        .col-2{
+            width: 100%;
+            margin: 20px 0px;
+        }
+
+        .image img{
+            height: 120px;
+        }
+
+    }
+
+    /* responsive less then 400 px device  */
+    @media only screen and (max-width: 400px) {
+        .col-1 {
+            margin: 50px 10px;
+            max-width: 100%;
+            padding: 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="whole-content">
+        <div class="content-holder">
+            <div class="navbar">
+                <img src="https://uploads-ssl.webflow.com/63b6b9e4076a33cad6ad7437/63b6ba4397457709f6264246_logo.png"
+                    alt="">
+            </div>
+            <div class="box-1">
+                <div class="col-1">
+                    <h1>Hi Samir,</h1>
+                    <p>
+                        Please Verify that your email address is hello@christ.com and that you entered it when signing
+                        up
+                        for E-shop.
+                    </p>
+                    <div class="button">
+                        <a href="#">Verify Email</a>
+                    </div>
+                    <p>
+                        Be the member of E-shop by verifing your email. If you have any questions, please don't hesitate
+                        to contact us.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="col-2">
+                    <div class="image">
+                        <img src="https://uploads-ssl.webflow.com/63b6b9e4076a33cad6ad7437/63badd4ccfc08460296f8f32_growbusiness.png"
+                            alt="">
+                    </div>
+                    <h1>GROW YOUR BUSINESS</h1>
+                </div>
+
+                <div class="col-2">
+                    <div class="image">
+                        <img src="https://uploads-ssl.webflow.com/63b6b9e4076a33cad6ad7437/63bafc859d5ae7b3459dd256_advertise.png"
+                            alt="">
+                    </div>
+                    <h1>PROMOTE YOUR PRODUCTS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="box">
+                <h1>
+                    BEST ONLINE SHOPPING WEBSITE
+                </h1>
+                <br>
+                <p>
+                    Please follow us through facebook, instagram & twitter
+                </p>
+                <br>
+                <div class="social">
+                    <a href="#">
+                        <img src="https://tighestimepieces.com/wp-content/uploads/2016/11/Facebook-icon-WHITE.png"
+                            alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                            alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                            alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <p>© E-shop.com.np 2023</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
